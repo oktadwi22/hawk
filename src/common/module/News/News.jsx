@@ -5,6 +5,7 @@ import React from "react";
 import { BsMedium } from "react-icons/bs";
 import { FaTelegram } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
+import Link from "next/link";
 
 export default function News() {
   return (
@@ -18,17 +19,23 @@ export default function News() {
         />
       </div>
       <ComponentTransition className="w-full flex justify-center py-5 items-center overflow-hidden">
-        <div className="w-full relative py-5 gap-2 flex justify-center items-center">
+        <div className="w-full relative py-5 gap-3 flex justify-center items-center">
           <div className=" relative">
-            <FaTelegram size={50} className="text-[#cfcfcf]" />
+            <Link href={'/'}>
+            <FaTelegram size={50} className="text-[#cfcfcf]  hover:text-green-500" />
+            </Link>
           </div>
 
           <div className=" relative">
-            <FaXTwitter size={50} className="text-[#cfcfcf]" />
+          <Link href={'/'}>
+            <FaXTwitter size={50} className="text-[#cfcfcf] hover:text-green-500" />
+            </Link>
           </div>
 
           <div className=" relative">
-            <BsMedium size={50} className="text-[#cfcfcf]" />
+          <Link href={'/'}>
+            <BsMedium size={50} className="text-[#cfcfcf] hover:text-green-500" />
+            </Link>
           </div>
         </div>
       </ComponentTransition>

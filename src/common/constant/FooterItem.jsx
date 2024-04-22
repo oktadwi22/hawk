@@ -2,19 +2,19 @@
 
 export const ResourcesItem = [
     {
-        title: 'Launchpad',
+        title: 'OTP SERVICE',
         src: '#',
     },
     {
-        title: 'Locking & Vesting',
+        title: 'MINING GPU',
         src: '#',
     },
     {
-        title: 'Staking & Farming',
+        title: 'HELPER KIT',
         src: '#',
     },
     {
-        title: 'Token Minter',
+        title: 'MARKETPLACE',
         src: '#',
     },
 
@@ -49,7 +49,7 @@ export const FollowusItem = [
         src: '/',
     },
     {
-        title: 'Twitter',
+        title: 'X',
         src: '/',
     },
     {

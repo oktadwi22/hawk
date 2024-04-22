@@ -35,6 +35,7 @@ export default function Subscribe() {
           </ComponentTransition>
         </div>
       </div>
+      
     </div>
   );
 }

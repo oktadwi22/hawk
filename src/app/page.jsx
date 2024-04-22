@@ -8,12 +8,14 @@ export default function Home() {
   return (
     <div className="flex flex-col relative overflow-hidden justify-center items-center">
       <Hero />
-      <div className="w-full lg:mt-10 py-20 max-w-[1500px] px-5">
+      <div className="w-full mt-[300px] lg:mt-32 py-20 max-w-[1500px] px-5">
         <SliderTechLeader />
       </div>
       <Service />
       <News />
       <Subscribe />
+      
     </div>
+    
   );
 }

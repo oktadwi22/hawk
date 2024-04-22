@@ -16,7 +16,7 @@ import ButtonWarp from "@/common/component/element/ButtonWarp";
 export default function Hero() {
   return (
     <div className="h-auto max-w-[1500px]  flex flex-col justify-start px-5 lg:px-10 pb-48 w-full mt-20 overflow-hidden ">
-      <div className="video-background h-[24%] lg:h-[110vh]">
+      <div className="video-background h-[20%] lg:h-[100vh]">
         <video autoPlay loop muted playsInline className="video">
           <source src="/Aset/background.webm" type="video/webm" />
         </video>
@@ -60,7 +60,7 @@ export default function Hero() {
           </div>
         </div>
 
-        <ComponentTransition className=" flex w-full relative  justify-center items-center">
+        {/* <ComponentTransition className=" flex w-full relative  justify-center items-center">
 
           <div className="right-content relative max-lg:mt-40">
           <Image
@@ -107,7 +107,7 @@ export default function Hero() {
             
             </div>
           </div>
-        </ComponentTransition>
+        </ComponentTransition> */}
       </div>
     </div>
   );
