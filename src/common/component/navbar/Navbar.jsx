@@ -71,7 +71,7 @@ const Navbar = () => {
           <Link href="/" className=" flex justify-end">
             <ButtonViewAll
               title="Go To App"
-              className="hover:!bg-[#EEEEEE] transition-colors duration-300 overflow-hidden !bg-transparent outline outline-1 outline-[#dfdfdf]  w-auto !py-2"
+              className="hover:!bg-green-500 transition-colors duration-300 overflow-hidden !bg-transparent outline outline-1 outline-green-500  w-auto !py-2"
             />
           </Link>
         </div>
