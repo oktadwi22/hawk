@@ -14,14 +14,14 @@ import Link from "next/link";
 
 export default function Hero() {
   return (
-    <div className="h-auto max-w-[1500px]  flex flex-col justify-center lg:justify-start px-5 lg:px-10 pb-48 w-full mt-20 overflow-hidden ">
+    <div className="h-auto max-w-[1500px] flex flex-col justify-center lg:justify-start px-5 lg:px-10 pb-48 w-full mt-20 overflow-hidden ">
       <div className="video-background h-[20%] lg:h-[100vh]">
         <video autoPlay loop muted playsInline className="video">
           <source src="/Aset/background.webm" type="video/webm" />
           <source src="/Aset/background.mp4" type="video/mp4" />
         </video>
       </div>
-      <div className="w-full gap-5 flex justify-center  items-center mt-28">
+      <div className="w-full gap-5 lg:mx-20 flex justify-center  items-center mt-28">
         <div className="w-full  z-[9] flex-col py-5 h-auto flex  rounded-2xl px-5">
           <div className="w-full flex justify-center lg:justify-start text-center mt-5 ">
             <HeroText
@@ -63,18 +63,18 @@ export default function Hero() {
               </div>
             </div>
           </ComponentTransition>
-          <div className="w-full flex max-lg:justify-center lg:items-center gap-5 mt-3">
+          <div className="w-full flex max-lg:justify-center lg:items-center gap-3 mt-3">
             <div className="mt-2  lg:mt-0">
               <Link href={"https://t.me/HawkProtocol_bot"}>
                 <Button
                   title="go To App"
-                  className="!ring-1   !text-slate-50 !bg-transparent !ring-green-500"
+                  className="!ring-1 !text-slate-50 !bg-transparent !ring-green-500"
                 />
               </Link>
             </div>
             <div>
               <Link href={"https://hawk-protocol.gitbook.io"}>
-                <ButtonWarp label="Documment" className={'!text-sm'} />
+                <ButtonWarp label="Documentation" className={'!text-sm '} />
               </Link>
             </div>
           </div>
