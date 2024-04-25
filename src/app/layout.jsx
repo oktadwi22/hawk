@@ -8,7 +8,7 @@ const plusj = Plus_Jakarta_Sans({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Hawk Protocol",
-  description: "Hawk Protocol ~ Truly Decentralized, scalable, trusted protocol.",
+  description: "Hawk Protocol ~ A Gateway to Advanced Decentralized Solutions.",
   icons: '/Aset/logo.png'
 };
 
