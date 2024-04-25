@@ -11,7 +11,7 @@ export default function News() {
   return (
     <div className="h-auto max-w-[1500px] relative flex flex-col justify-center px-5 lg:px-10 py-10 w-full">
       <div className="w-full flex flex-col justify-center items-center">
-        <SectionText title="NEWS & COMMUNITY" />
+        <SectionText className="!px-4 !text-xl !mb-8 !py-2" title="NEWS & COMMUNITY" />
         <H1
           title="KEEP UP TO DATE WITH OUR LATEST MOVES IN THE DEFI SPACE."
           className="!text-2xl lg:!text-5xl w-full lg:w-[60%] font-semibold !text-center justify-center items-center"
@@ -21,20 +21,27 @@ export default function News() {
       <ComponentTransition className="w-full flex justify-center py-5 items-center overflow-hidden">
         <div className="w-full relative py-5 gap-3 flex justify-center items-center">
           <div className=" relative">
-            <Link href={'/'}>
-            <FaTelegram size={50} className="text-[#cfcfcf]  hover:text-green-500" />
+            <Link href={"https://t.me/HawkProtocol"}>
+              <FaTelegram
+                size={50}
+                className="text-[#cfcfcf]  hover:text-green-500"
+              />
             </Link>
           </div>
-
           <div className=" relative">
-          <Link href={'/'}>
-            <FaXTwitter size={50} className="text-[#cfcfcf] hover:text-green-500" />
+            <Link href={"https://twitter.com/HawkProtocol"}>
+              <FaXTwitter
+                size={50}
+                className="text-[#cfcfcf] hover:text-green-500"
+              />
             </Link>
           </div>
-
           <div className=" relative">
-          <Link href={'/'}>
-            <BsMedium size={50} className="text-[#cfcfcf] hover:text-green-500" />
+            <Link href={"https://medium.com/@hawkprotocol"}>
+              <BsMedium
+                size={50}
+                className="text-[#cfcfcf] hover:text-green-500"
+              />
             </Link>
           </div>
         </div>

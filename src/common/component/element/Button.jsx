@@ -5,7 +5,7 @@ export default function Button({title= '', className= '', disable}) {
     <button disabled={disable} className={`
     ${disable ? 'bg-[#afafaf]' : ' bg-[#dfdfdf] transition-all duration-1000 hover:delay-75 hover:bg-[#222221] group'}
     ${className}  px-6 overflow-hidden py-2 relative rounded-full`}>
-      <h1 className={`text-black transition-all duration-500 group-hover:translate-y-[-150%]`}>
+      <h1 className={`text-slate-50 transition-all duration-500 group-hover:translate-y-[-150%]`}>
         {title}
       </h1>
       <h1 className="text-white z-[99] transition-all duration-500 absolute translate-y-[10%] group-hover:translate-y-[-100%]">

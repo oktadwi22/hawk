@@ -14,7 +14,12 @@ export default function Home() {
       <Service />
       <News />
       <Subscribe />
-      
+      <div className=" h-[100%] w-full lg:h-[50 vh]">
+        <video autoPlay loop muted playsInline className="video">
+        <source src="/Aset/background.webm" type="video/webm" />
+          <source src="/Aset/background.mp4" type="video/mp4" />
+        </video>
+      </div>
     </div>
     
   );

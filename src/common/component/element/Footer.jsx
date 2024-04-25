@@ -13,45 +13,38 @@ import { FaXTwitter } from "react-icons/fa6";
 import Link from "next/link";
 import ComponentTransition from "@/common/component/element/ComponentTransition";
 
-
 export default function Footer() {
   return (
     
     <div className="h-auto max-w-[1500px] relative flex flex-col justify-center px-5 lg:px-10 py-10 w-full">
-      <div className=" video-background h-[100%] lg:h-[35vh]">
-        <video autoPlay loop muted playsInline className="video">
-        <source src="/Aset/background.webm" type="video/webm" />
-          <source src="/Aset/background.mp4" type="video/mp4" />
-        </video>
-      </div>
+      
       <footer>
-        <div className="container mx-auto">
+        <div className="container ">
           <div className="lg:flex lg:w-full justify-center items-start">
-            <div className="w-full -mx-6 lg:w-2/5 flex flex-col px-6 justify-center lg:items-center">
-              <Logo className="!w-[100px] !h-[100px]" />
-              <h1 className="text-xl font-semibold">Hawk Protocol</h1>
+            <div className="w-full flex px-6 justify-center lg:items-center">
+              <div className=" flex flex-col justify-center">
+              <Logo className="!w-[170px] flex justify-center !-mt-10 !h-[170px]" />
+              <h1 className="text-2xl font-semibold">Hawk Protocol</h1>
               <ComponentTransition  >
-                <div className="w-[100px] relative ml-3 md:ml-0 py-5 gap-3 flex justify-center items-center">
+                <div className="w-full relative py-5 gap-3 flex justify-center items-center">
                   <div className=" relative">
-                    <Link href={"/"}>
+                  <Link href={'https://t.me/HawkProtocol'}>
                       <FaTelegram
                         size={30}
                         className="text-[#cfcfcf]  hover:text-green-500"
                       />
                     </Link>
                   </div>
-
                   <div className=" relative">
-                    <Link href={"/"}>
+                  <Link href={'https://twitter.com/HawkProtocol'}>
                       <FaXTwitter
                         size={30}
                         className="text-[#cfcfcf] hover:text-green-500"
                       />
                     </Link>
                   </div>
-
                   <div className=" relative">
-                    <Link href={"/"}>
+                  <Link href={'https://medium.com/@hawkprotocol'}>
                       <BsMedium
                         size={30}
                         className="text-[#cfcfcf] hover:text-green-500"
@@ -60,10 +53,13 @@ export default function Footer() {
                   </div>
                 </div>
               </ComponentTransition>
+              
+              </div>
             </div>
+            
 
             <div className="mt-6 lg:mt-0 w-full ">
-              <div className="grid grid-cols-2 gap-6  sm:grid-cols-2 md:flex md:justify-around w-full">
+              <div className="flex justify-around w-full">
                 <div>
                   <h1 className="text-white font-semibold ">Hawk Protocol</h1>
                   <div className="flex flex-col relative justify-start mt-1 gap-2 items-start w-full">
@@ -95,6 +91,17 @@ export default function Footer() {
             </div>
           </div>
         </div>
+        <div className='footer text-green-500 mt-10 -mb-4'>
+              <a
+              className=" font-sans"
+                href=""
+                target="_blank"
+              >
+                HAWK PROTOCOL 
+              </a>
+              © 2024. All rights reserved.
+          </div>
+        
       </footer>
     </div>
   );

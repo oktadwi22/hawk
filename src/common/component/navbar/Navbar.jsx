@@ -68,7 +68,7 @@ const Navbar = () => {
         </div>
 
         <div className="lg:flex hidden  w-full items-end justify-end">
-          <Link href="/" className=" flex justify-end">
+          <Link href="https://t.me/HawkProtocol_bot" className=" flex justify-end">
             <ButtonViewAll
               title="Go To App"
               className="hover:!bg-green-500 transition-colors duration-300 overflow-hidden !bg-transparent outline outline-1 outline-green-500  w-auto !py-2"

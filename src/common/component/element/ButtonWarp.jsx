@@ -18,7 +18,7 @@ export default function ButtonWarp({label, className}) {
         onMouseLeave={() => setIsHover(!isHover)}
         className="cursor-pointer overflow-hidden px-5 py-2 relative gap-2 flex items-center rounded-full border-[1px] border-[#50C878]   "
       >
-        <h1 className="text-[#F2F2F2]  translate-y-[0%] transition-all duration-1000 text-xl  font-semibold">
+        <h1 className="text-[#F2F2F2]  translate-y-[0%] transition-all duration-1000   font-semibold">
           {label}
         </h1>
         <GoArrowUpRight

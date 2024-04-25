@@ -10,53 +10,72 @@ import { BsMedium } from "react-icons/bs";
 import ComponentTransition from "@/common/component/element/ComponentTransition";
 import Button from "@/common/component/element/Button";
 import ButtonWarp from "@/common/component/element/ButtonWarp";
-
-
+import Link from "next/link";
 
 export default function Hero() {
   return (
-    <div className="h-auto max-w-[1500px]  flex flex-col justify-start px-5 lg:px-10 pb-48 w-full mt-20 overflow-hidden ">
+    <div className="h-auto max-w-[1500px]  flex flex-col justify-center lg:justify-start px-5 lg:px-10 pb-48 w-full mt-20 overflow-hidden ">
       <div className="video-background h-[20%] lg:h-[100vh]">
         <video autoPlay loop muted playsInline className="video">
-        <source src="/Aset/background.webm" type="video/webm" />
+          <source src="/Aset/background.webm" type="video/webm" />
           <source src="/Aset/background.mp4" type="video/mp4" />
         </video>
       </div>
-      <div className="w-full gap-5 flex lg:flex-row flex-col justify-center items-center mt-28">
+      <div className="w-full gap-5 flex justify-center  items-center mt-28">
         <div className="w-full  z-[9] flex-col py-5 h-auto flex  rounded-2xl px-5">
-          <div className="w-full mt-5 ">
+          <div className="w-full flex justify-center lg:justify-start text-center mt-5 ">
             <HeroText
               texts="Hawk Protocol"
-              className="lg:!text-6xl !text-[#dfdfdf] leading-[0.95em] "
+              className="lg:!text-6xl !text-5xl !font-extrabold !text-green-500 !text-center leading-[0.95em] "
             />
           </div>
           <H1
             delay={0.2}
-            className="mt-5 w-full lg:!w-[80%] justify-start !text-lg text-start"
-            title="Truly Decentralized, scalable, trusted protocol."
+            className="mt-5 w-full lg:!w-[80%] justify-center lg:justify-start !text-lg text-center"
+            title="A Gateway to Advanced Decentralized Solutions."
             textColor="normal"
           />
           <ComponentTransition className="w-full overflow-hidden">
-            <div className="w-full relative py-5 gap-2 flex justify-start items-center">
+            <div className="w-full relative py-5 gap-2 flex justify-center lg:justify-start items-center">
               <div className=" relative">
-                <FaTelegram size={35} className="text-[#cfcfcf]" />
+                <Link href={"https://t.me/HawkProtocol"}>
+                  <FaTelegram
+                    size={30}
+                    className="text-[#cfcfcf]  hover:text-green-500"
+                  />
+                </Link>
               </div>
-
               <div className=" relative">
-                <FaXTwitter size={35} className="text-[#cfcfcf]" />
+                <Link href={"https://twitter.com/HawkProtocol"}>
+                  <FaXTwitter
+                    size={30}
+                    className="text-[#cfcfcf] hover:text-green-500"
+                  />
+                </Link>
               </div>
-
               <div className=" relative">
-                <BsMedium size={35} className="text-[#cfcfcf]" />
+                <Link href={"https://medium.com/@hawkprotocol"}>
+                  <BsMedium
+                    size={30}
+                    className="text-[#cfcfcf] hover:text-green-500"
+                  />
+                </Link>
               </div>
             </div>
           </ComponentTransition>
-          <div className="w-full flex lg:flex-row flex-col max-lg:justify-start lg:items-center gap-5 mt-5">
-            <div>
-              <Button title="Go To App" />
+          <div className="w-full flex max-lg:justify-center lg:items-center gap-5 mt-3">
+            <div className="mt-2  lg:mt-0">
+              <Link href={"https://t.me/HawkProtocol_bot"}>
+                <Button
+                  title="go To App"
+                  className="!ring-1   !text-slate-50 !bg-transparent !ring-green-500"
+                />
+              </Link>
             </div>
             <div>
-              <ButtonWarp label="Documentation" />
+              <Link href={"https://hawk-protocol.gitbook.io"}>
+                <ButtonWarp label="Documment" className={'!text-sm'} />
+              </Link>
             </div>
           </div>
         </div>

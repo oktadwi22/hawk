@@ -17,7 +17,7 @@ export default function Service() {
     <div className="h-auto max-w-[1500px] relative flex flex-col justify-center px-5 lg:px-10 py-10 w-full">
       <div className="flex w-full  relative justify-center items-center">
         <div className="w-full flex flex-col justify-center items-center">
-          <SectionText title="Service" />
+          <SectionText className="!px-4 !text-xl !mb-8 !py-2" title="Our Service" />
           <H1
             title="Discover the Power of Hawk Service"
             className="!text-2xl lg:!text-5xl w-full lg:w-[40%] font-semibold !text-center justify-center items-center"
