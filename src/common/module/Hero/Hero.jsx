@@ -18,7 +18,7 @@ export default function Hero() {
     <div className="h-auto max-w-[1500px]  flex flex-col justify-start px-5 lg:px-10 pb-48 w-full mt-20 overflow-hidden ">
       <div className="video-background h-[20%] lg:h-[100vh]">
         <video autoPlay loop muted playsInline className="video">
-          <source src="/Aset/background.webm" type="video/webm" />
+          <source src="/Aset/background.mp4" type="video/mp4" />
         </video>
       </div>
       <div className="w-full gap-5 flex lg:flex-row flex-col justify-center items-center mt-28">

@@ -20,7 +20,7 @@ export default function Footer() {
     <div className="h-auto max-w-[1500px] relative flex flex-col justify-center px-5 lg:px-10 py-10 w-full">
       <div className=" video-background h-[100%] lg:h-[35vh]">
         <video autoPlay loop muted playsInline className="video">
-          <source src="/Aset/background.webm" type="video/webm" />
+          <source src="/Aset/background.mp4" type="video/mp4" />
         </video>
       </div>
       <footer>
